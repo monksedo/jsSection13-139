@@ -1,23 +1,26 @@
 //Solve these problems:
 
 //#1 Create a one line function that adds adds two parameters
+const add = (a, b) => a + b;
+const total = add(2, 5);
+console.log(total);
 
 //Closure: What does the last line return?
-const addTo = x => y => x + y
-var addToTen = addTo(10)
-addToTen(3)
+const addTo = x => y => x + y;
+var addToTen = addTo(10);
+addToTen(3); // 13
 
 //Currying: What does the last line return?
-const sum = (a, b) => a + b
-const curriedSum = (a) => (b) => a + b
-curriedSum(30)(1)
+const sum = (a, b) => a + b;
+const curriedSum = (a) => (b) => a + b;
+curriedSum(30)(1); // 31
 
 
 //Currying: What does the last line return?
 const sum = (a, b) => a + b
 const curriedSum = (a) => (b) => a + b
 const add5 = curriedSum(5)
-add5(12)
+add5(12) // 17
 
 //Composing: What does the last line return?
 const compose = (f, g) => (a) => f(g(a));

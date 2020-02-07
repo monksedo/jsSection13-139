@@ -31,12 +31,12 @@ function moveCommand(direction) {
     return whatHappens;
 }
 
-//#2 return value when moveCommand("forward"); // the loop break out without output "you encounter a monster";
+//#2 return value when moveCommand("forward"); // the code breakout without output "you encounter a monster";
 
-//#3 return value when moveCommand("back"); // 
+//#3 return value when moveCommand("back"); // "you arrived home"
 
-//#4 return value when moveCommand("right");
+//#4 return value when moveCommand("right"); // "you found a river"
 
-//#5 return value when moveCommand("left");
+//#5 return value when moveCommand("left"); // the code exit without output
 
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
