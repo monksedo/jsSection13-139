@@ -36,7 +36,7 @@ This section lists the collection of HTML & CSS Front-end exercises and projects
 
 ## JavaScript
 
-### Section 13: Advance Javascript 
+### 
 
-### lecture 138, 139, control flow
+### 
 
