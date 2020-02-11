@@ -1,14 +1,20 @@
-// let and const
+// let and const scope
 const gamePlayer = 'Dat';
-let expLevel = 100;
-let wizardExp = false;
+let gameExp = 100;
+let gameWizard = false;
 
-if (expLevel > 90) {
-  let wizardExp = true;
-  console.log('inside', wizardExp);
+if (gameExp > 90) {
+  let gameWizard = true;
+  console.log('inside', gameWizard);    // gameWizard is only accessible inside { code block }
 }
-console.log('outside', wizardExp)
-// gamePlayer = 'Chris'; // Uncaught TypeError: Assigment to constant variable.
+console.log('outside', gameWizard); // gameWizard at global is accessible inside any { code block }
+
+function playerStat() {
+  if (gameExp > 90) {
+    console.log(gameWizard);  // 
+  }
+}
+playerStat();
 
 //////////////////////////////////////////////////////////////
 // Example of an object
@@ -43,42 +49,10 @@ const obj1 = {
 }
 console.log(obj1);
 
-// Or dynamic propertie values in ES6
+// Or dynamic properties in ES6
 const obj2 = {
   [name]: 'hello',
   [2 * 5]: 'goodbye!'
 }
 console.log(obj2);
 
-// Old way of assigning objects property and value with same name
-const a = 'Mike';
-const b = true;
-const c = {};
-
-const obj3 = {
-  a: a,
-  b: b,
-  c: c
-}; console.log(obj3);
-
-// Now we can do this
-const obj4 = {
-  a,
-  b,
-  c
-}; console.log(obj4);
-
-///////////////////////////////////////////////////////////////////////////
-// Template Strings
-
-const firstName = "Sallly";
-const age = 34;
-const pet = "horse";
-
-// The go old way of concat string together
-const greeting = "Hello " + firstName + ", you seem to be " + age + ". What a lovely " + pet + "you have!";
-console.log(greeting);
-
-// With string template
-const greeting1 = `Hello ${firstName}, you seem te be ${age}. What a lovely ${pet} you have?`;
-console.log(greeting1);
