@@ -1,4 +1,4 @@
-# Complete Web Development Zero to Mastery 
+# Full-Stack Web Development Learning
 This repo keep track of all full-stack web development learning, code snippets, and exercise activities.
 
 ## HTML & CSS

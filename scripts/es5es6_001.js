@@ -56,3 +56,27 @@ const obj2 = {
 }
 console.log(obj2);
 
+
+///////////////////////////////////////////////////////////////////////////
+// Template Strings
+const firstName = 'Chris'
+const age = 49;
+const pet = 'horse';
+
+// The good old string concat method
+const greeting = 'Hello ' + firstName + ' you seem to be ' + age +
+  ' and look, what a lovely ' + pet + ' you have!';
+console.log(greeting);
+
+// Here is how the new string template works
+const greetingNew = `Hello ${firstName} you seem to be ${age} and look, what a lovely ${pet} you have! `;
+console.log(greetingNew);
+
+
+///////////////////////////////////////////////////////////////////////////
+// Default arguments
+function greet(name = '', age = 16, pet = 'bird') {
+  return `Hello ${name} you seem to be ${age}, look what a lovely ${pet} you have!`;
+};
+console.log(greet(firstName, age, pet)); // function call that passed in all three arguments
+console.log(greet());   // function call that passed in no argument, so defaul argument is being used.
