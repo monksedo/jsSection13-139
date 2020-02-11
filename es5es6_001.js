@@ -1,6 +1,5 @@
-// let and const
-/*
-const player = 'Dat';
+// let and const scope
+const gamePlayer = 'Dat';
 let experience = 100;
 let wizardLevel = false;
 
@@ -8,9 +7,7 @@ if (experience > 90) {
   let wizardLevel = true;
   console.log('inside', wizardLevel);
 }
-
 console.log('outside', wizardLevel)
-*/
 
 //////////////////////////////////////////////////////////////
 // Example of an object
