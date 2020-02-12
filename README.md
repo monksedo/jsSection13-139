@@ -30,7 +30,7 @@ This section lists the collection of HTML & CSS Front-end exercises and projects
 
 ## JavaScript
 
-[### Code Example & Exercises](https://monksedo.github.io/fullstackWebdev/)
+[Code Example & Exercises](https://monksedo.github.io/fullstackWebdev/)
 
 ### 
 
