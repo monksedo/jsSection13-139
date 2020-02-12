@@ -9,7 +9,7 @@ const first = () => {
     alert(greet);
   }
   return second;
-}
+};
 
 const newFunc = first();
 newFunc();
@@ -29,7 +29,7 @@ const mulby5 = curriedMultiply(5);
 console.log(mulby5(3));
 
 // Compose
-/*
+
 const compose = (f, g) => (a) => f(g(a));
 console.log(compose());
 
@@ -39,7 +39,7 @@ console.log(sum);
 let n = 9;
 const temp = compose(sum, sum)(n);
 console.log(temp);
-*/
+
 
 // Closure
 /*

@@ -80,3 +80,26 @@ function greet(name = '', age = 16, pet = 'bird') {
 };
 console.log(greet(firstName, age, pet)); // function call that passed in all three arguments
 console.log(greet());   // function call that passed in no argument, so defaul argument is being used.
+
+
+//////////////////////////////////////////////////////////////////////////////
+// Symbol
+let sym1 = Symbol();
+let sym2 = Symbol('Test');
+let sym3 = Symbol('Test');
+
+sym2 = sym3;    // are not the same 
+
+
+/////////////////////////////////////////////////////////////////////////////
+// arrow functions
+
+// Good old function declaration
+function add(a, b) {
+  return a + b;
+}
+console.log(add(10, 30));
+
+// New arrow function
+const add1 = (a, b) => a + b;
+console.log(add1(10, 30));
