@@ -35,5 +35,5 @@ var grown = arrayLoop(ages, adult);
 var heartRates = arrayLoop(ages, maxHeartRate);
 
 console.log(`Ages are ${ages}`);
-console.log(`You are grown up if you ages are above ${grown}`);
+console.log(`You are grown up if your ages are above ${grown}`);
 console.log(`Your hearth rate will be ${heartRates}`);
