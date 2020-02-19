@@ -164,7 +164,7 @@ console.log(`Your hearth rate will be ${heartRates}`);
 
 ///////////////////////////////////////////////////////////////////////////////
 // First Class Functions: functions returning Functions
-
+/*
 function interviewQuestion(job) {
   if (job === 'designer') {
     return function (name) {
@@ -191,9 +191,11 @@ designerQuestion('Jane');
 designerQuestion('Mike');
 
 interviewQuestion('teacher')('Chris');
+*/
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////// Immediately Involked Function Expressions (IIFE)
+/////////////////////////////////////////////////////////////////////
+// Immediately Involked Function Expressions (IIFE)
+//
 /*
 var chris = {
   name: 'Chris',
