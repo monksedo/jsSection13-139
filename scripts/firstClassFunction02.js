@@ -33,7 +33,6 @@ var ages = arrayLoop(birthYears, calculateAge);
 var limitJapan = adult.bind(this, 20);
 var grownJapan = arrayLoop(ages, limitJapan);
 var limitUS = adult.bind(this, 18);
-console.log(limitUS());
 var grownUS = arrayLoop(ages, limitUS);
 var heartRates = arrayLoop(ages, maxHeartRate);
 
