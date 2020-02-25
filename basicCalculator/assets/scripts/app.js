@@ -9,47 +9,41 @@ function getUserInput() {
     return parseFloat(userInput.value);
 }
 
+function displayResult(initResult, operator, num) {
+    const text = `${initResult} ${operator} ${num}`;
+    outputResult(result, text);
+}
+
 function add() {
     const num = getUserInput();
-    console.log(result);
-    const text = `${result} + ${num}`;
+    const initResult = result;
     result += num;
-    console.log(result);
-    outputResult(result, text);
-    return result;
+    displayResult(initResult, '+', num);
 }
+
 function subtract() {
     const num = getUserInput();
-    console.log(result);
-    const text = `${result} - ${num}`;
+    const initResult = result;
     result -= num;
-    console.log(result);
-    outputResult(result, text);
-    return result;
+    displayResult(initResult, '-', num);
 }
+
 function multiply() {
     const num = getUserInput();
-    console.log(result);
-    const text = `${result} * ${num}`;
+    const initResult = result;
     result *= num;
-    console.log(result);
-    outputResult(result, text);
-    return result;
+    displayResult(initResult, '*', num);
 }
+
 function division() {
     const num = getUserInput();
-    console.log(result);
-    const text = `${result} / ${num}`;
+    const initResult = result;
     result /= num;
-    console.log(result);
-    outputResult(result, text);
-    return result;
+    displayResult(initResult, '/', num);
 }
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', division);
-
-// outputResult(result, text);
 
