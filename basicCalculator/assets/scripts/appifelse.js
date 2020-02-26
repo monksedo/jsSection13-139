@@ -26,9 +26,19 @@ function printLog(operator, preResult, num, newResult) {
 }
 
 function calcExpression(operType) {
-    operType = operType.toLowerCase();
-    console.log(operType);
     const num = getUserInput();
+    console.log(num);
+    operType = operType.toLowerCase();
+    if (
+        'NaN' && operType === 'add' ||
+        'NaN' && operType === 'subtract' ||
+        'NaN' && operType === 'multiply' ||
+        'NaN' && operType === 'divide'
+    ) {
+        return;
+    }
+
+    console.log(operType);
     const initResult = result;
     let operator;
     if (operType === 'add') {
