@@ -20,7 +20,8 @@ header {
 }
 
 #results,
-#calculator {
+#calculator,
+#logging {
   margin: 2rem auto;
   width: 40rem;
   max-width: 90%;
@@ -30,7 +31,8 @@ header {
   color: #023d6d;
 }
 
-#results {
+#results,
+#logging {
   text-align: center;
 }
 
@@ -77,3 +79,4 @@ header {
   margin-top: 1rem;
   text-align: center;
 }
+
