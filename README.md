@@ -32,5 +32,19 @@ This section lists the collection of HTML & CSS Front-end exercises and projects
 
 [Code Example & Exercises](https://monksedo.github.io/fullstackWebdev/)
 
-### 
+### Checkbook Balance Basic
+[Project repo](https://github.com/monksedo/budgetBasic)
+[Check out the site](https://monksedo.github.io/budgetBasic/)
+
+### Roll Dice Code Challenge
+[Project repo](https://github.com/monksedo/diceChallenge)
+[Check out the site](https://monksedo.github.io/diceChallenge/)
+
+### Roll Dice 
+[Project repo](https://github.com/monksedo/RollTheDiceGame)
+[Check out the site](https://monksedo.github.io/RollTheDiceGame/)
+
+### Todo List Basic
+[Project repo](https://github.com/monksedo/todolist)
+[Check out the site](https://monksedo.github.io/todolist/)
 
