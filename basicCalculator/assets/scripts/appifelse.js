@@ -33,21 +33,23 @@ function calcExpression(operType) {
         (operType !== '+') &&
         (operType !== '-') &&
         (operType !== '*') &&
-        (operType !== '/')
+        (operType !== '/') ||
+        (!num)
     ) {
         return;
     }
 
     const initResult = result;
     let operator = operType
+
     console.log(operator);
-    if (operType === '+' && num > 0) {
+    if (operType === '+') {
         result += num;
-    } else if (operType === '-' && num > 0) {
+    } else if (operType === '-') {
         result -= num;
-    } else if (operType === '*' && num > 0) {
+    } else if (operType === '*') {
         result *= num;
-    } else if (operType === '/' && num > 0) {
+    } else if (operType === '/') {
         result /= num;
     } else {
         alert('Please enter a number');
