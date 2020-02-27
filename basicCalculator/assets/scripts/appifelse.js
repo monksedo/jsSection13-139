@@ -26,34 +26,33 @@ function printLog(operator, preResult, num, newResult) {
 }
 
 function calcExpression(operType) {
-    const num = getUserInput();
+    let num = getUserInput();
     console.log(num);
     operType = operType.toLowerCase();
     if (
-        'NaN' && operType === 'add' ||
-        'NaN' && operType === 'subtract' ||
-        'NaN' && operType === 'multiply' ||
-        'NaN' && operType === 'divide'
+        (operType !== '+') &&
+        (operType !== '-') &&
+        (operType !== '*') &&
+        (operType !== '/')
     ) {
         return;
     }
 
-    console.log(operType);
     const initResult = result;
-    let operator;
-    if (operType === 'add') {
+    let operator = operType
+    console.log(operator);
+    if (operType === '+' && num > 0) {
         result += num;
-        operator = '+';
-    } else if (operType === 'subtract') {
+    } else if (operType === '-' && num > 0) {
         result -= num;
-        operator = '-';
-    } else if (operType === 'multiply') {
+    } else if (operType === '*' && num > 0) {
         result *= num;
-        operator = '*';
-    } else if (operType === 'divide') {
+    } else if (operType === '/' && num > 0) {
         result /= num;
-        operator = '/';
+    } else {
+        alert('Please enter a number');
     }
+
     logEntries.push(num);
     displayResult(initResult, operator, num);
     printLog(operType, initResult, num, result);
@@ -61,22 +60,22 @@ function calcExpression(operType) {
 
 // Add function
 function add() {
-    calcExpression('Add');
+    calcExpression('+');
 }
 
 // Subtract function
 function subtract() {
-    calcExpression('Subtract');
+    calcExpression('-');
 }
 
 // mulpiply function
 function multiply() {
-    calcExpression('Multiply');
+    calcExpression('*');
 }
 
 // division function
 function division() {
-    calcExpression('Divide');
+    calcExpression('/');
 }
 
 // Display data on UI after calculation
